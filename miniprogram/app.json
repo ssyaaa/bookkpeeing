@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/record/record",
+    "pages/chart/chart",
+    "pages/my/my",
+    "pages/type/type",
+    "pages/mybill/mybill"
+  ],
+  "window": {
+    "backgroundColor": "#FEDB5B",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FEDB5B",
+    "navigationBarTitleText": "小太阳记账",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#FEDB58",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeYellow.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记账",
+        "iconPath": "images/record.png",
+        "selectedIconPath": "images/recordYellow.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "images/chart.png",
+        "selectedIconPath": "images/chartYellow.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/myYellow.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,66 @@
+<view class="record">
+  <view class="header"></view>
+  <view class="content">
+    <view class="types">
+      <view class="types-title clearfix">
+        <view class="fl title-item {{item.isActive ? 'active' : ''}}" wx:for="{{tabData}}" wx:key="index" bindtap="toggleTab" data-active="{{item.isActive}}" data-index="{{index}}" data-datas="tabData"> {{item.title}}</view>
+      </view>
+      <!-- 轮播 -->
+      <view class="banner">
+        <swiper class="wechat-swiper" indicator-dots="{{swiperOption.indicatorDots}}" indicator-active-color="{{swiperOption.indicatorActiveColor}}" indicator-color="{{swiperOption.indicatorColor}}">
+          <block>
+            <swiper-item>
+              <view class="swiper-item" > 
+                <view class="item-icon {{item.selected ? 'active' : ''}}" wx:for="{{bookkeepingData}}" wx:key="index" data-id="{{item._id}}" data-index="{{index}}" data-selected ="{{item.selected}}" bindtap="selectBookKeepingType">
+                  <view class="icon-text">
+                    <view class="icon">
+                      <image class="auto-img icon-img" src="{{item.icon_url}}" mode="widthFix"></image>
+                    </view>
+                    <view class="text">{{item.title}}</view>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+    <!-- 账户类型选择 account -->
+      <view class="account">
+        <view class="account-title">账户选择</view>
+        <view class="account-tab">
+          <view class="tab-item" wx:for="{{acountData}}" wx:key="index">
+            <view class="tab {{item.isActive ? 'active' : ''}}" data-active="{{item.isActive}}" data-index="{{index}}" data-datas="acountData" bindtap="toggleTab">{{item.title}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- 信息 -->
+      <view class="info" >
+        <!-- 记账日期 -->
+        <view class="info-box"> 
+          <picker class="date-p" mode="date" start="{{dateRange.start}}" end="{{dateRange.end}}" bindchange="getInfo" data-title="date">
+            <view class="date-box">
+              <view class="date-title">记账日期</view>
+              <view class="record-date">{{info.date}}</view>
+            </view>
+          </picker>
+        </view>
+        <!-- 金额 -->
+        <view class="info-box">
+          <view class="info-title">金额</view>
+          <view class="info-input">
+            <input value="{{info.meney}}" class="weui-input" placeholder="输出记账金额" type="digit" confirm-type="done" maxlength="20" data-title="meney" bindchange="getInfo"/>
+          </view>
+        </view>
+        <!-- 备注 -->
+        <view class="info-box">
+          <view class="info-title">备注</view>
+          <view class="info-input">
+            <input value="{{comment}}" class="weui-input" placeholder="输出备注内容" type="text" confirm-type="done" maxlength="30" data-title="comment" bindchange="getInfo"/>
+          </view>
+        </view>
+      </view>
+      <!-- 按钮 -->
+      <view class="save" bindtap="bookKeeping">保存</view>
+  </view>
+</view>
