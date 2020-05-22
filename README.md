@@ -22,7 +22,7 @@
     |--我的记账功能展示用户全部记账信息，用户可以对数据进行假删除（不会真正删除云数据库中的数据）
   ### 动图展示  
     |--首页界面
-   ![image](https://github.com/ssyaaa/elm/blob/master/gif/2.gif)   
+   ![image](https://github.com/ssyaaa/bookkpeeing/blob/master/gif/首页.gif)   
    
     |--记账页面
    ![image](https://github.com/ssyaaa/elm/blob/master/gif/3.gif)   
