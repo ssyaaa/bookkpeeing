@@ -25,7 +25,7 @@
    ![image](https://github.com/ssyaaa/bookkpeeing/blob/master/gif/首页.gif)   
    
     |--记账页面
-   ![image](https://github.com/ssyaaa/elm/blob/master/gif/3.gif)   
+   ![image](https://github.com/ssyaaa/bookkpeeing/blob/master/gif/记账页.gif)   
    
     |--图表页面
    ![image](https://github.com/ssyaaa/elm/blob/master/gif/4.gif)
