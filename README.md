@@ -31,5 +31,5 @@
    ![image](https://github.com/ssyaaa/bookkpeeing/blob/master/gif/图表页.gif)
    
     |--我的页面
-   ![image](https://github.com/ssyaaa/elm/blob/master/gif/5.gif)
+   ![image](https://github.com/ssyaaa/bookkpeeing/blob/master/gif/我的页面.gif)
 
